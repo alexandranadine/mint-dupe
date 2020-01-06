@@ -1,0 +1,166 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  font-family: AvenirNext, sans-serif;
+  background-color: #eceef1;
+}
+
+span.sub-tel {
+  font-size: 10px;
+  color: #444444;
+  padding: 5px 0px;
+}
+
+h1 {
+  font-family: AvenirNext, sans-serif;
+  font-size: 24px;
+  font-weight: normal;
+  margin: 0px;
+  color: #4c4c4c;
+}
+
+h2 {
+  font-family: AvenirNext, sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  margin: 0px;
+  color: #4c4c4c;
+}
+
+header {
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px 30px;
+}
+
+
+button.signin {
+  height: 43px;
+  background-color: #0077c5;
+  border: 1px solid black;
+  border-radius: 5px;
+  color: #fff;
+  text-align: center;
+  vertical-align: middle;
+  padding: 0 20px;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 600px;
+  margin: auto;
+  border: 0px solid black;
+}
+
+.logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0px;
+}
+
+.sub-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 15px;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 380px;
+  padding: 30px;
+  background-color: white;
+  border: 1px solid #c7c7c7;
+  
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  width: 380px;
+  padding: 30px;
+}
+
+.terms-container {
+  text-align: center;
+  font-size: 12px;
+  font-style: italic;
+  line-height: 1.5;
+  color: #757575;
+}
+
+.form-footer {
+  background-color: #eceef1;
+  border: 1px solid;
+  width: 380px;
+}
+
+button.create {
+  display: flex;
+  justify-content: center;
+  height: 43px;
+  width: 100%;
+  background-color: #0077c5;
+  box-shadow: 0 1px 1px 0 #3f3f3f;
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  font-size: 15.75px;
+  padding: 6px 12px;
+}
+
+fieldset.email-container, fieldset.tel-container, fieldset.pw-container {
+  display: flex;
+  flex-direction: column;
+  width: 380px;
+  padding: 30px 30px 6px;
+  border: none;
+}
+
+input.pw { 
+  background: url("images/graylock.png") no-repeat 0 50%/34px 21px;
+  background-position: right center;
+}
+
+input {
+  box-sizing: border-box;
+  width:100%;
+  height: 34px;
+  border: 1px solid #c7c7c7;
+  border-radius: 2px;
+  padding: 0px 6px 0px 8px;
+}
+
+img.mint-logo, img.qb-logo, img.tt-logo {
+  width: 33px;
+  height: 33px;
+  padding: 6px;
+}
+
+a:link, a:visited {
+  color: #0077c5;
+  text-decoration: none;
+}
+
+a.learn {
+  font-size: 12px;
+}
+
+label {
+  font-size: 14px;
+  color: #404040;
+  padding: 0 0 6px;
+}
