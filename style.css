@@ -10,12 +10,6 @@ body {
   background-color: #eceef1;
 }
 
-span.sub-tel {
-  font-size: 10px;
-  color: #444444;
-  padding: 5px 0px;
-}
-
 h1 {
   font-family: AvenirNext, sans-serif;
   font-size: 24px;
@@ -32,23 +26,48 @@ h2 {
   color: #4c4c4c;
 }
 
-header {
-  display: flex;
-  justify-content: flex-end;
-  padding: 10px 30px;
+a:link, a:visited {
+  color: #0077c5;
+  text-decoration: none;
 }
 
 
+
+/*   HEADER   */
+
+header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 60px;
+  padding: 10px 30px;
+}
+
+.header-text {
+  padding: 0px 8px;
+  text-align: center;
+  line-height: 1.5;
+  font-size: 12px;
+  color: #505050;
+}
+
 button.signin {
-  height: 43px;
+  display: flex;
+  justify-content: center;
+  height: 34px;
   background-color: #0077c5;
   border: 1px solid black;
-  border-radius: 5px;
+  border-radius: 4px;
+  font-size: 14px;
   color: #fff;
   text-align: center;
   vertical-align: middle;
   padding: 0 20px;
 }
+
+
+
+/*   MAIN CONTENT   */
 
 .main-container {
   display: flex;
@@ -57,14 +76,13 @@ button.signin {
   justify-content: center;
   width: 600px;
   margin: auto;
-  border: 0px solid black;
 }
 
 .logo-container {
   display: flex;
   justify-content: center;
-  align-items: center;
-  padding: 20px 0px;
+  padding-top: 20px;
+  padding-bottom: 15px;
 }
 
 .sub-logo {
@@ -74,16 +92,59 @@ button.signin {
   padding-bottom: 15px;
 }
 
+img.mint-logo, img.qb-logo, img.tt-logo {
+  width: 33px;
+  height: 33px;
+  padding: 6px;
+}
+
 .form-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 380px;
-  padding: 30px;
+  padding: 30px 30px 0px 30px;
   background-color: white;
+  border: 1px solid #c7c7c7; 
+}
+
+a.learn {
+  font-size: 12px;
+}
+
+fieldset.email-container, fieldset.tel-container, fieldset.pw-container {
+  display: flex;
+  flex-direction: column;
+  width: 380px;
+  padding: 30px 30px 6px;
+  border: none;
+}
+
+input {
+  box-sizing: border-box;
+  width: 100%;
+  height: 34px;
   border: 1px solid #c7c7c7;
-  
+  border-radius: 2px;
+  padding: 0px 6px 0px 8px;
+}
+
+input.pw { 
+  background: url("images/graylock.png") no-repeat 0 50%/34px 21px;
+  background-position: right center;
+}
+
+label {
+  font-size: 14px;
+  color: #404040;
+  padding: 0 0 6px;
+}
+
+span.sub-tel {
+  font-size: 10px;
+  color: #444444;
+  padding: 5px 0px;
 }
 
 .button-container {
@@ -92,20 +153,6 @@ button.signin {
   margin: auto;
   width: 380px;
   padding: 30px;
-}
-
-.terms-container {
-  text-align: center;
-  font-size: 12px;
-  font-style: italic;
-  line-height: 1.5;
-  color: #757575;
-}
-
-.form-footer {
-  background-color: #eceef1;
-  border: 1px solid;
-  width: 380px;
 }
 
 button.create {
@@ -122,45 +169,71 @@ button.create {
   padding: 6px 12px;
 }
 
-fieldset.email-container, fieldset.tel-container, fieldset.pw-container {
+.terms-container {
+  text-align: center;
+  font-size: 12px;
+  font-style: italic;
+  line-height: 1.8;
+  padding: 10px 0 30px 0;
+  color: #757575;
+}
+
+.form-footer {
+  font-size: 10px;
+  color: #8d9096;
+  text-align: center;
+  width: 378px;
+  padding: 20px 16px;
+  background-color: #eceef1;
+}
+
+
+
+/*   FOOTER   */
+
+footer {
   display: flex;
-  flex-direction: column;
-  width: 380px;
-  padding: 30px 30px 6px;
-  border: none;
+  justify-content: center;
+  text-align: center;
+  margin: 0px 56px;
+  padding: 0px 30px;
+  font-size: 12px;
+  line-height: 1.5;
+  color: #505050;
 }
 
-input.pw { 
-  background: url("images/graylock.png") no-repeat 0 50%/34px 21px;
-  background-position: right center;
+.footer-links {
+  display: flex;
+  justify-content: center;
+  padding-top: 30px;
 }
 
-input {
-  box-sizing: border-box;
-  width:100%;
-  height: 34px;
-  border: 1px solid #c7c7c7;
-  border-radius: 2px;
-  padding: 0px 6px 0px 8px;
+.footer-links a:link {
+  font-size: 12px;
+  color: #505050;
 }
 
-img.mint-logo, img.qb-logo, img.tt-logo {
-  width: 33px;
-  height: 33px;
-  padding: 6px;
+.footer-links a:hover {
+  text-decoration: underline;
 }
 
-a:link, a:visited {
-  color: #0077c5;
+.sticky-widget {
+  position: absolute;
+  bottom: 0px;
+  right: 70px;
+  padding: 10px 12px;
+  border-radius: 2px 2px 5px 5px;
+  background-color: #6B6C72;
+  font-size: 14px;
+}
+
+.sticky-widget a:link, .sticky-widget a:hover {
+  color: #fff;
   text-decoration: none;
 }
 
-a.learn {
-  font-size: 12px;
-}
-
-label {
-  font-size: 14px;
-  color: #404040;
-  padding: 0 0 6px;
+@media screen and (max-width: 620px) {
+  header, .header-text {
+      display: none !important;
+  }
 }
